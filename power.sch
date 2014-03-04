@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -769,460 +769,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <technologies>
 <technology name="">
 <attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="inductor-nkl">
-<description>Inductors by NKL® 
-
-        _/_/            _/          _/          _/          _/
-      _/   _/         _/          _/     _/               _/
-    _/      _/      _/          _/_/                    _/
-  _/         _/   _/          _/     _/               _/
-_/            _/_/          _/          _/          _/ _/ _/ _/ _/
-
-http://www.nkl-emv.de
-
-Allgemeine Informationen:
-- können die Pinanschlüsse in Becher- und Sockelversionen, kundenspezifisch, geändert werden; (-&gt;Absprache mit NKL®)
-- sind die Rastermaße nackter Drosseln nur Vorschläge; Layouts für nackte, mehrphasige, Drosseln, in liegender Bauweise,
-  sind nicht erfasst, sondern müssen vom Anwender gemäß Muster entworfen werden;
-- sollte die Auswahl eines Bauteils mit NKL® abgesprochen werden, da bestimmte Kombinationen (Drossel - Becher - Strom)
-   unwirtschaftlich bzw. nicht produzierbar sind;
-
-Generally,
-- the contacts of cup devices may be selected inividually however only in consultation with NKL®;
-- grid pinning dimensions of plain chokes are only suggested; layouts for plain, multiphase, flat built in chokes, are not included
-   and need to be designed by the customer according to a sample;
-- the final selection of a device should be in agreement with NKL® since some combinations (regarding choke, package and current)
-   may be uneconomical or even not producible;
-
-Please contact us for more information:
-
-	NKL GmbH
-	Birkichstr. 15
-	74549 Wolpertshausen
-
-	Tel:  +49 (0)7904 9781-0
-	Fax:  +49 (0)7904 9781-50
-
-CadSoft and the author do not warrant that this library is error free or will meet someones specific requirements.
-
-Created by Michael.Fuchshuber@nkl-emv.de
-NKL® 07/42</description>
-<packages>
-<package name="B1">
-<description>Becher B1 (cup B1)   top view
-ca. Maße (approx. dimensions):
-LxB(W)xH [mm]: 19x10(12.5)x19
-RM (grid): (12.5x10)mm
-manufactured by NKL®</description>
-<wire x1="-9.5" y1="5" x2="-8" y2="5" width="0.127" layer="21"/>
-<wire x1="-8" y1="5" x2="-7" y2="6.5" width="0.127" layer="51"/>
-<wire x1="-7" y1="6.5" x2="-5.5" y2="6.5" width="0.127" layer="51"/>
-<wire x1="-5.5" y1="6.5" x2="-4.5" y2="5" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="5" x2="4.5" y2="5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="5" x2="5.5" y2="6.5" width="0.127" layer="51"/>
-<wire x1="5.5" y1="6.5" x2="7" y2="6.5" width="0.127" layer="51"/>
-<wire x1="7" y1="6.5" x2="8" y2="5" width="0.127" layer="51"/>
-<wire x1="8" y1="5" x2="9.5" y2="5" width="0.127" layer="21"/>
-<wire x1="9.5" y1="5" x2="9.5" y2="-5" width="0.127" layer="21"/>
-<wire x1="9.5" y1="-5" x2="8" y2="-5" width="0.127" layer="21"/>
-<wire x1="8" y1="-5" x2="7" y2="-6.5" width="0.127" layer="51"/>
-<wire x1="7" y1="-6.5" x2="5.5" y2="-6.5" width="0.127" layer="51"/>
-<wire x1="5.5" y1="-6.5" x2="4.5" y2="-5" width="0.127" layer="51"/>
-<wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-5" x2="-5.5" y2="-6.5" width="0.127" layer="51"/>
-<wire x1="-5.5" y1="-6.5" x2="-7" y2="-6.5" width="0.127" layer="51"/>
-<wire x1="-7" y1="-6.5" x2="-8" y2="-5" width="0.127" layer="51"/>
-<wire x1="-8" y1="-5" x2="-9.5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-9.5" y1="-5" x2="-9.5" y2="5" width="0.127" layer="21"/>
-<pad name="2" x="-6.25" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="4" x="6.25" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="3" x="6.25" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="1" x="-6.25" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<text x="-5.08" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="B1/2">
-<description>Becher B1/2 (cup B1/2)   top view
-ca. Maße (approx. dimensions):
-LxB(W)xH [mm]: 19x10(12.5)x19
-RM (grid): (10x10)mm
-manufactured by NKL®</description>
-<wire x1="-9.25" y1="5" x2="-6.75" y2="5" width="0.127" layer="21"/>
-<wire x1="-6.75" y1="5" x2="-6" y2="6.25" width="0.127" layer="51"/>
-<wire x1="-6" y1="6.25" x2="-4" y2="6.25" width="0.127" layer="51"/>
-<wire x1="-4" y1="6.25" x2="-3.25" y2="5" width="0.127" layer="51"/>
-<wire x1="-3.25" y1="5" x2="3.25" y2="5" width="0.127" layer="21"/>
-<wire x1="3.25" y1="5" x2="4" y2="6.25" width="0.127" layer="51"/>
-<wire x1="4" y1="6.25" x2="6" y2="6.25" width="0.127" layer="51"/>
-<wire x1="6" y1="6.25" x2="6.75" y2="5" width="0.127" layer="51"/>
-<wire x1="6.75" y1="5" x2="9.25" y2="5" width="0.127" layer="21"/>
-<wire x1="9.25" y1="5" x2="9.25" y2="-5" width="0.127" layer="21"/>
-<wire x1="9.25" y1="-5" x2="6.75" y2="-5" width="0.127" layer="21"/>
-<wire x1="6.75" y1="-5" x2="6" y2="-6.25" width="0.127" layer="51"/>
-<wire x1="6" y1="-6.25" x2="4" y2="-6.25" width="0.127" layer="51"/>
-<wire x1="4" y1="-6.25" x2="3.25" y2="-5" width="0.127" layer="51"/>
-<wire x1="3.25" y1="-5" x2="-3.25" y2="-5" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="-5" x2="-4" y2="-6.25" width="0.127" layer="51"/>
-<wire x1="-4" y1="-6.25" x2="-6" y2="-6.25" width="0.127" layer="51"/>
-<wire x1="-6" y1="-6.25" x2="-6.75" y2="-5" width="0.127" layer="51"/>
-<wire x1="-6.75" y1="-5" x2="-9.25" y2="-5" width="0.127" layer="21"/>
-<wire x1="-9.25" y1="-5" x2="-9.25" y2="5" width="0.127" layer="21"/>
-<pad name="2" x="-5" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="4" x="5" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="3" x="5" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="1" x="-5" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<text x="-3.81" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="B2">
-<description>Becher B2 (cup B2)   top view
-ca. Maße (approx. dimensions):
-LxB(W)xH [mm]: 22x10(12.5)x22
-RM (grid): (12.5x10)mm
-manufactured by NKL®</description>
-<wire x1="-11" y1="5" x2="-8" y2="5" width="0.127" layer="21"/>
-<wire x1="-8" y1="5" x2="-7" y2="6.25" width="0.127" layer="51"/>
-<wire x1="-7" y1="6.25" x2="-5.5" y2="6.25" width="0.127" layer="51"/>
-<wire x1="-5.5" y1="6.25" x2="-4.5" y2="5" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="5" x2="4.5" y2="5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="5" x2="5.5" y2="6.25" width="0.127" layer="51"/>
-<wire x1="5.5" y1="6.25" x2="7" y2="6.25" width="0.127" layer="51"/>
-<wire x1="7" y1="6.25" x2="8" y2="5" width="0.127" layer="51"/>
-<wire x1="8" y1="5" x2="11" y2="5" width="0.127" layer="21"/>
-<wire x1="11" y1="5" x2="11" y2="-5" width="0.127" layer="21"/>
-<wire x1="11" y1="-5" x2="8" y2="-5" width="0.127" layer="21"/>
-<wire x1="8" y1="-5" x2="7" y2="-6.25" width="0.127" layer="51"/>
-<wire x1="7" y1="-6.25" x2="5.5" y2="-6.25" width="0.127" layer="51"/>
-<wire x1="5.5" y1="-6.25" x2="4.5" y2="-5" width="0.127" layer="51"/>
-<wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-5" x2="-5.5" y2="-6.25" width="0.127" layer="51"/>
-<wire x1="-5.5" y1="-6.25" x2="-7" y2="-6.25" width="0.127" layer="51"/>
-<wire x1="-7" y1="-6.25" x2="-8" y2="-5" width="0.127" layer="51"/>
-<wire x1="-8" y1="-5" x2="-11" y2="-5" width="0.127" layer="21"/>
-<wire x1="-11" y1="-5" x2="-11" y2="5" width="0.127" layer="21"/>
-<pad name="1" x="-6.25" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="2" x="-6.25" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="4" x="6.25" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="3" x="6.25" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<text x="-5.08" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="B71">
-<description>Becher B7 (cup B7)   top view
-ca. Maße (approx. dimensions):
-ØxH [mm]: 18(20)x9
-RM (grid) [mm]: 10x15 / 5x17.5
-manufactured by NKL®</description>
-<wire x1="6.5" y1="-6" x2="6.5" y2="-8" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-8" x2="6.5" y2="-8" width="0.127" layer="51" curve="71.675306"/>
-<wire x1="-6.5" y1="8" x2="6.5" y2="8" width="0.127" layer="51" curve="-71.675306"/>
-<wire x1="-6.5" y1="-6" x2="-6.5" y2="6" width="0.127" layer="21" curve="-85.41878"/>
-<wire x1="-6.5" y1="6" x2="-6.5" y2="8" width="0.127" layer="21"/>
-<wire x1="6.5" y1="6" x2="6.5" y2="8" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-8" x2="-6.5" y2="-6" width="0.127" layer="21"/>
-<wire x1="6.5" y1="6" x2="6.5" y2="-6" width="0.127" layer="21" curve="-85.41878"/>
-<pad name="3" x="5" y="7.5" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="1" x="-5" y="7.5" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="2" x="-5" y="-7.5" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="4" x="5" y="-7.5" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="5" x="-2.5" y="8.75" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="7" x="2.5" y="8.75" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="6" x="-2.5" y="-8.75" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="8" x="2.5" y="-8.75" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="KS1405">
-<description>Kappe KS1405 (case KS1405)   top view
-ca. Maße (approx. dimensions):
-LxB(W)xH [mm]: 18x8x17
-RM (grid) [mm]: 7.5(5)x5
-manufactured by NKL®</description>
-<wire x1="3.5" y1="5" x2="3.5" y2="-5" width="0.127" layer="21"/>
-<wire x1="3.5" y1="-5" x2="-3.5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-5" x2="-3.5" y2="5" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="5" x2="3.5" y2="5" width="0.127" layer="21"/>
-<wire x1="-4" y1="9" x2="4" y2="9" width="0.127" layer="21"/>
-<wire x1="4" y1="9" x2="4" y2="-9" width="0.127" layer="21"/>
-<wire x1="4" y1="-9" x2="-4" y2="-9" width="0.127" layer="21"/>
-<wire x1="-4" y1="-9" x2="-4" y2="9" width="0.127" layer="21"/>
-<pad name="2" x="2.5" y="-3.75" drill="0.8128" diameter="1.9304" shape="octagon"/>
-<pad name="1" x="-2.5" y="-3.75" drill="0.8128" diameter="1.9304" shape="octagon"/>
-<pad name="3" x="-2.5" y="3.75" drill="0.8128" diameter="1.9304" shape="octagon"/>
-<pad name="4" x="2.5" y="3.75" drill="0.8128" diameter="1.9304" shape="octagon"/>
-<pad name="5" x="-2.5" y="1.25" drill="0.8128" diameter="1.9304" shape="octagon"/>
-<pad name="6" x="2.5" y="1.25" drill="0.8128" diameter="1.9304" shape="octagon"/>
-<text x="-2.54" y="6.35" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="B10">
-<description>Becher B10 (cup B10)   top view
-ca. Maße (approx. dimensions):
-LxB(W)xH [mm]: 18x10x21
-RM (grid) [mm]: 5x10
-manufactured by NKL®</description>
-<wire x1="-9" y1="5" x2="9" y2="5" width="0.127" layer="21"/>
-<wire x1="9" y1="5" x2="9" y2="-5" width="0.127" layer="21"/>
-<wire x1="9" y1="-5" x2="-9" y2="-5" width="0.127" layer="21"/>
-<wire x1="-9" y1="-5" x2="-9" y2="5" width="0.127" layer="21"/>
-<pad name="5" x="0" y="2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="6" x="0" y="-2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="1" x="5" y="2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="2" x="5" y="-2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="4" x="-5" y="-2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="3" x="-5" y="2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<text x="-7.62" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="-8" y="0" drill="3"/>
-<hole x="8" y="0" drill="3"/>
-</package>
-<package name="B19">
-<description>Becher B19 (cup B19)   top view
-ca. Maße (approx. dimensions):
-LxB(W)xH [mm]: 18x13x20
-RM (grid) [mm]: 10x5(x10/x15)</description>
-<wire x1="9" y1="5" x2="9" y2="-5" width="0.127" layer="51"/>
-<wire x1="9" y1="-5" x2="-9" y2="-5" width="0.127" layer="51"/>
-<wire x1="-9" y1="-5" x2="-9" y2="5" width="0.127" layer="51"/>
-<wire x1="9" y1="5" x2="-9" y2="5" width="0.127" layer="51"/>
-<wire x1="1" y1="5" x2="4" y2="5" width="0.127" layer="51" curve="-180"/>
-<wire x1="-4" y1="5" x2="-1" y2="5" width="0.127" layer="51" curve="-180"/>
-<wire x1="-4" y1="-5" x2="-1" y2="-5" width="0.127" layer="51" curve="180"/>
-<wire x1="1" y1="-5" x2="4" y2="-5" width="0.127" layer="51" curve="180"/>
-<wire x1="6" y1="-5" x2="9" y2="-5" width="0.127" layer="51" curve="180"/>
-<wire x1="-9" y1="-5" x2="-6" y2="-5" width="0.127" layer="51" curve="180"/>
-<wire x1="-9" y1="5" x2="-6" y2="5" width="0.127" layer="51" curve="-180"/>
-<wire x1="6" y1="5" x2="9" y2="5" width="0.127" layer="51" curve="-180"/>
-<wire x1="-9" y1="-3.73" x2="-9" y2="3.73" width="0.127" layer="21"/>
-<wire x1="9" y1="3.73" x2="9" y2="-3.73" width="0.127" layer="21"/>
-<pad name="7" x="-2.5" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="6" x="2.5" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="5" x="7.5" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="8" x="-7.5" y="5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="1" x="-7.5" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="2" x="-2.5" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="3" x="2.5" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<pad name="4" x="7.5" y="-5" drill="1.27" diameter="3.81" shape="octagon"/>
-<text x="-5.08" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="S10">
-<description>Sockel S10 (base S10)   top view
-ca. Maße (approx. dimensions):
-LxB(W)xH [mm]: 18x10x21
-RM (grid) [mm]: 5x10
-manufactured by NKL®</description>
-<wire x1="-8.5" y1="4.5" x2="8.5" y2="4.5" width="0.127" layer="21"/>
-<wire x1="8.5" y1="4.5" x2="8.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="8.5" y1="-4.5" x2="-8.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-8.5" y1="-4.5" x2="-8.5" y2="4.5" width="0.127" layer="21"/>
-<pad name="5" x="0" y="2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="6" x="0" y="-2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="1" x="5" y="2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="2" x="5" y="-2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="4" x="-5" y="-2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<pad name="3" x="-5" y="2.5" drill="0.8128" diameter="2.1844" shape="octagon"/>
-<text x="-7.62" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="-8" y="0" drill="3"/>
-<hole x="8" y="0" drill="3"/>
-</package>
-<package name="B9">
-<description>Becher B9 (cup B9)   top view
-ca. Maße (approx. dimensions):
-ØxH [mm]: 18(20)x9
-RM (grid) [mm]: 10x12.5 / 16
-manufactured by NKL®</description>
-<wire x1="-6" y1="7.375" x2="-6" y2="-7.375" width="0.127" layer="21" curve="101.739201"/>
-<wire x1="-4.8" y1="-8.2" x2="-0.95" y2="-9.45" width="0.127" layer="21" curve="24.610398"/>
-<wire x1="4.8" y1="-8.2" x2="0.95" y2="-9.45" width="0.127" layer="21" curve="-24.610127"/>
-<wire x1="6" y1="-7.375" x2="6" y2="7.375" width="0.127" layer="21" curve="101.739201"/>
-<wire x1="4.8" y1="8.2" x2="0.95" y2="9.45" width="0.127" layer="21" curve="24.610127"/>
-<wire x1="-4.8" y1="8.2" x2="-0.95" y2="9.45" width="0.127" layer="21" curve="-24.610127"/>
-<circle x="0" y="0" radius="9.5" width="0.127" layer="51"/>
-<pad name="4" x="5" y="6.25" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="2" x="-5" y="6.25" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="1" x="-5" y="-6.25" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="3" x="5" y="-6.25" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="6" x="0" y="8" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<pad name="5" x="0" y="-8" drill="1.27" diameter="1.778" shape="long" rot="R90"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="STROKO">
-<wire x1="3.81" y1="1.016" x2="-3.81" y2="1.016" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-1.016" x2="-3.81" y2="1.016" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-1.016" x2="3.81" y2="-1.016" width="0.254" layer="94"/>
-<circle x="-4.572" y="-3.302" radius="0.127" width="0.4064" layer="94"/>
-<circle x="-4.572" y="1.778" radius="0.127" width="0.4064" layer="94"/>
-<text x="-3.81" y="4.064" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-5.588" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-3.81" y1="1.651" x2="3.81" y2="3.429" layer="94"/>
-<rectangle x1="-3.81" y1="-3.429" x2="3.81" y2="-1.651" layer="94"/>
-<pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="3" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2"/>
-<pin name="4" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="R1405U" prefix="L" uservalue="yes">
-<description>Gleichtakt-Entstördrossel (über typ. 5MHz)
-common mode choke (above typ.5MHz)</description>
-<gates>
-<gate name="G$1" symbol="STROKO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="B1" package="B1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="B1/2" package="B1/2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="B2" package="B2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="B71" package="B71">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="KS" package="KS1405">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="B10" package="B10">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="B19" package="B19">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="8"/>
-<connect gate="G$1" pin="3" pad="4"/>
-<connect gate="G$1" pin="4" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="S10" package="S10">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="B9" package="B9">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11230,6 +10776,110 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="chokes">
+<packages>
+<package name="L13-17">
+<pad name="P$1" x="0" y="0" drill="0.9" diameter="2.54"/>
+<pad name="P$2" x="17" y="0" drill="0.9" diameter="2.54"/>
+<pad name="P$3" x="17" y="13" drill="0.9" diameter="2.54"/>
+<pad name="P$4" x="0" y="13" drill="0.9" diameter="2.54"/>
+<wire x1="-2" y1="-2" x2="19" y2="-2" width="0.127" layer="21"/>
+<wire x1="19" y1="-2" x2="19" y2="19" width="0.127" layer="21"/>
+<wire x1="19" y1="19" x2="-2" y2="19" width="0.127" layer="21"/>
+<wire x1="-2" y1="19" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="13" x2="8" y2="13" width="0" layer="21" style="shortdash"/>
+<wire x1="8" y1="13" x2="8" y2="0" width="0" layer="21" style="shortdash"/>
+<wire x1="8" y1="0" x2="1.5" y2="0" width="0" layer="21" style="shortdash"/>
+<wire x1="1.5" y1="0" x2="1.5" y2="13" width="0" layer="21" style="shortdash"/>
+<wire x1="9" y1="13" x2="15.5" y2="13" width="0" layer="21" style="shortdash"/>
+<wire x1="15.5" y1="13" x2="15.5" y2="0" width="0" layer="21" style="shortdash"/>
+<wire x1="15.5" y1="0" x2="9" y2="0" width="0" layer="21" style="shortdash"/>
+<wire x1="9" y1="0" x2="9" y2="13" width="0" layer="21" style="shortdash"/>
+</package>
+<package name="L10-13">
+<pad name="P$1" x="0" y="0" drill="0.9" diameter="2.54"/>
+<pad name="P$2" x="13" y="0" drill="0.9" diameter="2.54"/>
+<pad name="P$3" x="13" y="10" drill="0.9" diameter="2.54" rot="R180"/>
+<pad name="P$4" x="0" y="10" drill="0.9" diameter="2.54" rot="R90"/>
+<wire x1="-2.5" y1="-3" x2="15.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="15.5" y1="-3" x2="15.5" y2="13" width="0.127" layer="21"/>
+<wire x1="15.5" y1="13" x2="-2.5" y2="13" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="13" x2="-2.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="1.5" y1="10" x2="6" y2="10" width="0" layer="21" style="shortdash"/>
+<wire x1="6" y1="10" x2="6" y2="0" width="0" layer="21" style="shortdash"/>
+<wire x1="6" y1="0" x2="1.5" y2="0" width="0" layer="21" style="shortdash"/>
+<wire x1="1.5" y1="0" x2="1.5" y2="10" width="0" layer="21" style="shortdash"/>
+<wire x1="7" y1="10" x2="11.5" y2="10" width="0" layer="21" style="shortdash"/>
+<wire x1="11.5" y1="10" x2="11.5" y2="0" width="0" layer="21" style="shortdash"/>
+<wire x1="11.5" y1="0" x2="7" y2="0" width="0" layer="21" style="shortdash"/>
+<wire x1="7" y1="0" x2="7" y2="10" width="0" layer="21" style="shortdash"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CHOKE-COMMON_MODE">
+<wire x1="-5.588" y1="-0.762" x2="5.588" y2="-0.762" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.588" y1="-1.778" x2="5.588" y2="-1.778" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-4.064" x2="-2.54" y2="-4.064" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="-4.064" x2="0" y2="-4.064" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="-4.064" x2="2.54" y2="-4.064" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-4.064" x2="5.08" y2="-4.064" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="1.524" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.524" x2="2.54" y2="1.524" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="1.524" x2="0" y2="1.524" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="1.524" x2="-2.54" y2="1.524" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="1.524" x2="-5.08" y2="1.524" width="0.254" layer="94" curve="-180"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="1.524" width="0.254" layer="94"/>
+<pin name="P$1" x="-5.08" y="-10.16" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="-10.16" length="middle" rot="R90"/>
+<pin name="P$3" x="-5.08" y="7.62" length="middle" rot="R270"/>
+<pin name="P$4" x="5.08" y="7.62" length="middle" rot="R270"/>
+<text x="-4.572" y="-10.16" size="1.27" layer="97">1</text>
+<text x="5.588" y="-10.16" size="1.27" layer="97">2</text>
+<text x="-4.572" y="7.62" size="1.27" layer="97">3</text>
+<text x="5.588" y="7.62" size="1.27" layer="97">4</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PLH10AN2211R5P2B">
+<gates>
+<gate name="G$1" symbol="CHOKE-COMMON_MODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L13-17">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$3"/>
+<connect gate="G$1" pin="P$3" pad="P$2"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLF14CBH3321R0K1">
+<gates>
+<gate name="G$1" symbol="CHOKE-COMMON_MODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L10-13">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$3"/>
+<connect gate="G$1" pin="P$3" pad="P$2"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11248,9 +10898,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="TP6" library="testpad" deviceset="TP" device="PAD1-13Y"/>
 <part name="TP7" library="testpad" deviceset="TP" device="PAD1-13Y"/>
 <part name="TP8" library="testpad" deviceset="TP" device="PAD1-13Y"/>
-<part name="L1" library="inductor-nkl" deviceset="R1405U" device="B2"/>
-<part name="L2" library="inductor-nkl" deviceset="R1405U" device="B1"/>
-<part name="L3" library="inductor-nkl" deviceset="R1405U" device="B2"/>
 <part name="D1" library="diode" deviceset="BY500" device=""/>
 <part name="D2" library="diode" deviceset="BY500" device=""/>
 <part name="D3" library="diode" deviceset="BY500" device=""/>
@@ -11261,13 +10908,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="TP9" library="testpad" deviceset="TP" device="PAD1-13Y"/>
 <part name="TP10" library="testpad" deviceset="TP" device="PAD1-13Y"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="U$3" library="chokes" deviceset="PLH10AN2211R5P2B" device=""/>
+<part name="U$4" library="chokes" deviceset="TLF14CBH3321R0K1" device=""/>
+<part name="U$5" library="chokes" deviceset="TLF14CBH3321R0K1" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="TP1" gate="G$1" x="12.7" y="50.8" rot="R90"/>
+<instance part="TP1" gate="G$1" x="2.54" y="43.18" rot="R90"/>
 <instance part="TP2" gate="G$1" x="-12.7" y="5.08" rot="R90"/>
 <instance part="TP3" gate="G$1" x="96.52" y="58.42" rot="R270"/>
 <instance part="TP4" gate="G$1" x="96.52" y="50.8" rot="R270"/>
@@ -11275,12 +10925,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="TP6" gate="G$1" x="30.48" y="12.7" rot="R180"/>
 <instance part="TP7" gate="G$1" x="76.2" y="45.72" rot="R180"/>
 <instance part="TP8" gate="G$1" x="91.44" y="45.72" rot="R180"/>
-<instance part="L1" gate="G$1" x="45.72" y="60.96" rot="R90"/>
-<instance part="L2" gate="G$1" x="25.4" y="53.34"/>
-<instance part="L3" gate="G$1" x="45.72" y="40.64" rot="R90"/>
 <instance part="D1" gate="1" x="58.42" y="76.2"/>
 <instance part="D2" gate="1" x="58.42" y="71.12"/>
-<instance part="D3" gate="1" x="58.42" y="30.48"/>
+<instance part="D3" gate="1" x="58.42" y="35.56"/>
 <instance part="C1" gate="G$1" x="73.66" y="55.88"/>
 <instance part="U$1" gate="G$1" x="24.13" y="17.78"/>
 <instance part="U$2" gate="G$1" x="41.91" y="17.78"/>
@@ -11288,41 +10935,26 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="TP9" gate="G$1" x="-5.08" y="0" rot="R180"/>
 <instance part="TP10" gate="G$1" x="10.16" y="0" rot="R180"/>
 <instance part="R2" gate="G$1" x="2.54" y="5.08"/>
+<instance part="U$3" gate="G$1" x="17.78" y="53.34"/>
+<instance part="U$4" gate="G$1" x="40.64" y="40.64" rot="R270"/>
+<instance part="U$5" gate="G$1" x="40.64" y="60.96" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="55.88" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="D1" gate="1" pin="A"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="L2" gate="G$1" pin="3"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
-<wire x1="17.78" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="43.18" x2="5.08" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="L3" gate="G$1" pin="4"/>
-<pinref part="L1" gate="G$1" pin="3"/>
-<wire x1="48.26" y1="48.26" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="50.8" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="55.88" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="73.66" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
-<junction x="48.26" y="50.8"/>
-<wire x1="53.34" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
-<junction x="53.34" y="50.8"/>
+<wire x1="22.86" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="73.66" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="55.88" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="73.66" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 <junction x="73.66" y="50.8"/>
@@ -11331,25 +10963,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="76.2" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="50.8" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
 <junction x="76.2" y="50.8"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="68.58" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="71.12" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
-<wire x1="25.4" y1="26.67" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="L1" gate="G$1" pin="4"/>
-<pinref part="D2" gate="1" pin="A"/>
-<wire x1="48.26" y1="68.58" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$4"/>
+<wire x1="22.86" y1="73.66" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$4"/>
+<wire x1="48.26" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<junction x="50.8" y="55.88"/>
+<pinref part="U$4" gate="G$1" pin="P$3"/>
+<wire x1="48.26" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="45.72" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+<junction x="50.8" y="50.8"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -11367,24 +10989,25 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="C1" gate="G$1" pin="+"/>
 <junction x="73.66" y="58.42"/>
 <pinref part="D3" gate="1" pin="C"/>
-<wire x1="60.96" y1="30.48" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="30.48" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="35.56" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="35.56" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <junction x="68.58" y="58.42"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="L3" gate="G$1" pin="3"/>
 <pinref part="D3" gate="1" pin="A"/>
-<wire x1="48.26" y1="33.02" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$4"/>
+<wire x1="48.26" y1="35.56" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P$2"/>
-<pinref part="L3" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="26.67" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="26.67" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
+<wire x1="30.48" y1="35.56" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -11439,15 +11062,42 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-10.16" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="A"/>
+<pinref part="U$3" gate="G$1" pin="P$3"/>
+<wire x1="55.88" y1="76.2" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="76.2" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="L3" gate="G$1" pin="2"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="53.34" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="4"/>
-<wire x1="43.18" y1="50.8" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
-<junction x="43.18" y="50.8"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="55.88" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="71.12" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$3"/>
+<wire x1="53.34" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="30.48" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<wire x1="25.4" y1="66.04" x2="25.4" y2="26.67" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<wire x1="22.86" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<wire x1="30.48" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="55.88" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<wire x1="27.94" y1="45.72" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
+<junction x="27.94" y="45.72"/>
 </segment>
 </net>
 </nets>
