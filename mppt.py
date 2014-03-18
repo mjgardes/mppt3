@@ -1,10 +1,22 @@
 #!/usr/bin/python2
 
+import sys
+import io
+import re
+from termcolor import colored, cprint
+from time import sleep
+
 def usage():
     print "Usage:  %s" % os.path.basename(sys.argv[0])
 
 def setup_pwm( period_ns ):
     # make sure device tree overlay is loaded
+    with slots = open('/sys/devices/bone_capemgr.9/slots', 'a+')
+        for line in slots:
+            if re.match():
+                print "warning: shit's already loaded. check compatibility yourself."
+                break 
+                
     # make sure that pwms are exported
     # make sure pwm period matches configuration.  if not possible, request a reboot and die
     # make sure DC is 0 and one output has inverse polarity
