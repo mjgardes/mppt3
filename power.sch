@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11273,8 +11273,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D2" library="diode" deviceset="BY500" device=""/>
 <part name="D3" library="diode" deviceset="BY500" device=""/>
 <part name="C1" library="rcl" deviceset="CPOL-US" device="E5-10.5"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="0R1"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="0R1"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0805" value="0R1"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0805" value="0R1"/>
 <part name="U$3" library="chokes" deviceset="PLH10AN2211R5P2B" device=""/>
 <part name="U$4" library="chokes" deviceset="TLF14CBH3321R0K1" device=""/>
 <part name="U$5" library="chokes" deviceset="TLF14CBH3321R0K1" device=""/>
@@ -11291,8 +11291,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="47k"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="PV+" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
-<part name="PV-" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
+<part name="PV+" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.3" value="MOUNT-PAD-ROUND3.3"/>
+<part name="PV-" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.3" value="MOUNT-PAD-ROUND3.3"/>
 <part name="BAT+" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="BAT-" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="H1" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
