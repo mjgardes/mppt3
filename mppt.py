@@ -9,22 +9,51 @@ from time import sleep
 
 def usage():
     print "Usage:  %s" % os.path.basename(sys.argv[0])
+	
+# For loading executable PRU code
+def setup_pru( code_to_load ):
+	# load code now
 
+def send_to_pru( location, data):
+	# send data to location in PRU DDR
+	
 def setup_pwm( period_ns ):
     # make sure device tree overlay is loaded
     with open('/sys/devices/bone_capemgr.9/slots', 'a+') as slots:
         matches = 0
         for line in slots:
             if re.match(".*MPPT3", line):
-                print "warning: device tree overlay already loaded. check compatibility yourself."
+                print line
                 matches +=1
                 break 
         if matches:
-            print 'overlay loaded that claims to be compatible'
+            print 'PWM overlay looks to be already loaded'
         else:
-            print 'attempting to load our overlay'
+            print 'Trying to load the PWM overlay'
             slots.write('MPPT3')
-                
+        
+		for line in slots:
+            if re.match(".*AIN", line):
+                print line
+                matches +=1
+                break 
+        if matches:
+            print 'AIN overlay looks to be already loaded'
+        else:
+            print 'Trying to load the AIN overlay'
+            slots.write('AIN') #fill this with analog helper DTO name
+			
+	    for line in slots:
+            if re.match(".*PRU", line):
+                print line
+                matches +=1
+                break 
+        if matches:
+            print 'PRU overlay looks to be already loaded'
+        else:
+            print 'Trying to load the PRU overlay'
+            slots.write('PRU') # fill with PRU DTO name
+			
     # make sure that pwms are exported
     pwm_num = 0
     for i in os.listdir('/sys/class/pwm'):
@@ -37,7 +66,7 @@ def setup_pwm( period_ns ):
             print 'exported pwm%s' % i
             #close(exports)
     elif pwm_num == 2 :
-        print "pwm interfaces exported before i got to it.  continue at your own risk."
+        print "PWM interfaces already exported.  continue at your own risk."
     else:
         print "something is wrong with the pwm interfaces.  you should probably reboot."
         
@@ -64,6 +93,14 @@ def setup_pwm( period_ns ):
     # make sure that the ain DT overlay is loaded
     # i think there's a module that needs loaded too
 
+# Set correct PWM mode: symmetric, A triggers above threshold, B triggers below
+	with open('prucode.p', 'r+') as prucode:
+		setup_pru(prucode)
+		# run it
+	# load parameters into DDR...
+	# build mode registers
+	send_to_pru(TBCTLA, parameters)
+	
 #def request_duty( duty_ns ):
 
 #def request_diff( posAIN, negAIN ):
