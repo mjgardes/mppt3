@@ -35,11 +35,26 @@ def setup_pwm( period_ns ):
             with open('/sys/class/pwm/export', 'w') as exports:
                 exports.write(i)
             print 'exported pwm%s' % i
+            #close(exports)
     elif pwm_num == 2 :
         print "pwm interfaces exported before i got to it.  continue at your own risk."
     else:
         print "something is wrong with the pwm interfaces.  you should probably reboot."
         
+    for i in {'pwm0', 'pwm1'}:
+       with open('/sys/class/pwm/' + i + '/period_ns', 'w') as period:
+            period.write(str(period_ns))
+       print 'Set period to %d' % period_ns
+       #close(period)
+    for i in {'pwm0', 'pwm1'}:
+       with open('/sys/class/pwm/' + i + '/run', 'w') as duty:
+            duty.write('1923')
+       print 'Set DC to 1923'
+       #close(duty)
+       with open('/sys/class/pwm/' + i + '/run', 'w') as run:
+            run.write('1')
+       print 'Set run to 1'
+       #close(run)
     # make sure pwm period matches configuration.  if not possible, request a reboot and die
     # make sure DC is 0 and one output has inverse polarity
     # run man, run
