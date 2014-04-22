@@ -1,6 +1,7 @@
 mppt3
 =====
+Software and hardware designs for DC-DC power conversion with max power point tracking and lots of other cool features for PV applications.
 
-Third try at making an open-source switching power converter with max power point tracking
+Software runs on a Beaglebone Black.  The goal is to have up to three analog boards stack on top of that.  Although the way I'm driving the boards now, I could go up to eight. Maybe eleven if I figure out how to build kernel modules.  Each analog module would be optimizing one panel to eke out every last possible mW.
 
-A lot of this design is still just sitting in my head.  Maybe once I get a prototype knocked out I can start to document it enough to make it reproducible.  
+My goal is to have this somewhat working by July '14.
