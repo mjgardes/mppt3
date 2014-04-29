@@ -19,6 +19,7 @@ def send_to_pru( location, data):
 	
 def setup_pwm( period_ns ):
     # make sure device tree overlay is loaded
+	# gotta fix the overlay to match the one i've actually been using but haven't put in the repository yet, so this is all broken for now
     with open('/sys/devices/bone_capemgr.9/slots', 'a+') as slots:
         matches = 0
         for line in slots:
@@ -33,7 +34,7 @@ def setup_pwm( period_ns ):
             slots.write('MPPT3')
         
 		for line in slots:
-            if re.match(".*AIN", line):
+            if re.match(".*iio", line):
                 print line
                 matches +=1
                 break 
@@ -41,7 +42,7 @@ def setup_pwm( period_ns ):
             print 'AIN overlay looks to be already loaded'
         else:
             print 'Trying to load the AIN overlay'
-            slots.write('AIN') #fill this with analog helper DTO name
+#            slots.write('cape-bone-iio') #fill this with analog helper DTO name if we're even using that
 			
 	    for line in slots:
             if re.match(".*PRU", line):
@@ -54,44 +55,9 @@ def setup_pwm( period_ns ):
             print 'Trying to load the PRU overlay'
             slots.write('PRU') # fill with PRU DTO name
 			
-    # make sure that pwms are exported
-    pwm_num = 0
-    for i in os.listdir('/sys/class/pwm'):
-        if re.match('pwm[0-9]', i):
-            pwm_num += 1
-    if pwm_num == 0:
-        for i in ['0', '1']:
-            with open('/sys/class/pwm/export', 'w') as exports:
-                exports.write(i)
-            print 'exported pwm%s' % i
-            #close(exports)
-    elif pwm_num == 2 :
-        print "PWM interfaces already exported.  continue at your own risk."
-    else:
-        print "something is wrong with the pwm interfaces.  you should probably reboot."
-        
-    for i in {'pwm0', 'pwm1'}:
-       with open('/sys/class/pwm/' + i + '/period_ns', 'w') as period:
-            period.write(str(period_ns))
-       print 'Set period to %d' % period_ns
-       #close(period)
-    for i in {'pwm0', 'pwm1'}:
-       with open('/sys/class/pwm/' + i + '/run', 'w') as duty:
-            duty.write('1923')
-       print 'Set DC to 1923'
-       #close(duty)
-       with open('/sys/class/pwm/' + i + '/run', 'w') as run:
-            run.write('1')
-       print 'Set run to 1'
-       #close(run)
-    # make sure pwm period matches configuration.  if not possible, request a reboot and die
-    # make sure DC is 0 and one output has inverse polarity
-    # run man, run
 
 #def setup_ain():
-    # probably just bake the pin names in for now
-    # make sure that the ain DT overlay is loaded
-    # i think there's a module that needs loaded too
+    # gotta buy some I2C or SPI current sensors and figure out how to talk to them
 
 # Set correct PWM mode: symmetric, A triggers above threshold, B triggers below
 	with open('prucode.p', 'r+') as prucode:
