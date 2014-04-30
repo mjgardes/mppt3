@@ -14031,6 +14031,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="hi freq" width="0.2032" drill="0">
+<clearance class="1" value="0.2032"/>
+</class>
+<class number="2" name="power" width="0.6096" drill="0">
+<clearance class="2" value="0.2032"/>
+</class>
 </classes>
 <parts>
 <part name="D1" library="diode" deviceset="BY500" device=""/>
@@ -14279,7 +14285,7 @@ pick two</text>
 <wire x1="43.18" y1="-91.44" x2="43.18" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="N$8" class="2">
 <segment>
 <pinref part="U$8" gate="G$1" pin="S"/>
 <wire x1="25.4" y1="58.42" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
@@ -14296,7 +14302,7 @@ pick two</text>
 <junction x="-22.86" y="58.42"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="N$1" class="2">
 <segment>
 <wire x1="55.88" y1="66.04" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="P$4"/>
@@ -14309,7 +14315,7 @@ pick two</text>
 <junction x="55.88" y="81.28"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="N$6" class="2">
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$3"/>
 <wire x1="58.42" y1="96.52" x2="-45.72" y2="96.52" width="0.1524" layer="91"/>
@@ -14335,35 +14341,35 @@ pick two</text>
 <junction x="48.26" y="-35.56"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$2" class="2">
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$4"/>
 <pinref part="U$8" gate="G$1" pin="D"/>
 <wire x1="58.42" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="N$3" class="2">
 <segment>
 <pinref part="U$7" gate="G$1" pin="D"/>
 <pinref part="U$5" gate="G$1" pin="P$3"/>
 <wire x1="45.72" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$5" class="2">
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
 <pinref part="D3" gate="1" pin="A"/>
 <wire x1="76.2" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="N$9" class="2">
 <segment>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
 <pinref part="D2" gate="1" pin="A"/>
 <wire x1="76.2" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="N$15" class="2">
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
 <pinref part="D1" gate="1" pin="A"/>
@@ -14388,7 +14394,7 @@ pick two</text>
 <wire x1="99.06" y1="162.56" x2="99.06" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="N$12" class="2">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P$2"/>
 <wire x1="106.68" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
@@ -14550,7 +14556,7 @@ pick two</text>
 <junction x="-25.4" y="73.66"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="N$17" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="SPI1_SCLK"/>
 <wire x1="81.28" y1="-35.56" x2="81.28" y2="-7.62" width="0.1524" layer="91"/>
@@ -14559,7 +14565,7 @@ pick two</text>
 <wire x1="66.04" y1="-7.62" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="N$18" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="SPI1_DI"/>
 <wire x1="78.74" y1="-91.44" x2="78.74" y2="-92.71" width="0.1524" layer="91"/>
@@ -14570,7 +14576,7 @@ pick two</text>
 <wire x1="63.5" y1="-10.16" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="N$19" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="SPI1_DO"/>
 <wire x1="78.74" y1="-35.56" x2="78.74" y2="-12.7" width="0.1524" layer="91"/>
@@ -14579,7 +14585,7 @@ pick two</text>
 <wire x1="60.96" y1="-12.7" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="N$20" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="CLKOUT2"/>
 <wire x1="93.98" y1="-35.56" x2="93.98" y2="-2.54" width="0.1524" layer="91"/>
@@ -14588,7 +14594,7 @@ pick two</text>
 <wire x1="71.12" y1="-2.54" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="N$21" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO0_7"/>
 <wire x1="93.98" y1="-91.44" x2="93.98" y2="-92.71" width="0.1524" layer="91"/>
@@ -14599,7 +14605,7 @@ pick two</text>
 <wire x1="68.58" y1="-5.08" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="N$22" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="SPI1_CS0"/>
 <wire x1="76.2" y1="-91.44" x2="76.2" y2="-92.71" width="0.1524" layer="91"/>
@@ -14610,7 +14616,7 @@ pick two</text>
 <wire x1="58.42" y1="-15.24" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="N$23" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO3_19"/>
 <wire x1="76.2" y1="-35.56" x2="76.2" y2="-17.78" width="0.1524" layer="91"/>
@@ -14619,7 +14625,7 @@ pick two</text>
 <wire x1="55.88" y1="-17.78" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="N$24" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO3_21"/>
 <wire x1="73.66" y1="-35.56" x2="73.66" y2="-20.32" width="0.1524" layer="91"/>
@@ -14628,7 +14634,7 @@ pick two</text>
 <wire x1="53.34" y1="-20.32" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="N$25" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_7"/>
 <wire x1="33.02" y1="-91.44" x2="33.02" y2="-92.71" width="0.1524" layer="91"/>
@@ -14639,7 +14645,7 @@ pick two</text>
 <wire x1="48.26" y1="-20.32" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="N$28" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_6"/>
 <wire x1="33.02" y1="-35.56" x2="33.02" y2="-17.78" width="0.1524" layer="91"/>
@@ -14648,7 +14654,7 @@ pick two</text>
 <wire x1="45.72" y1="-17.78" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="N$29" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_9"/>
 <wire x1="30.48" y1="-91.44" x2="30.48" y2="-92.71" width="0.1524" layer="91"/>
@@ -14659,7 +14665,7 @@ pick two</text>
 <wire x1="43.18" y1="-15.24" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="N$31" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_8"/>
 <wire x1="30.48" y1="-35.56" x2="30.48" y2="-12.7" width="0.1524" layer="91"/>
@@ -14668,7 +14674,7 @@ pick two</text>
 <wire x1="40.64" y1="-12.7" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="N$32" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_11"/>
 <wire x1="27.94" y1="-91.44" x2="27.94" y2="-92.71" width="0.1524" layer="91"/>
@@ -14679,7 +14685,7 @@ pick two</text>
 <wire x1="38.1" y1="-10.16" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="N$33" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_10"/>
 <wire x1="27.94" y1="-35.56" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
@@ -14688,7 +14694,7 @@ pick two</text>
 <wire x1="35.56" y1="-7.62" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="N$34" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_13"/>
 <wire x1="25.4" y1="-91.44" x2="25.4" y2="-92.71" width="0.1524" layer="91"/>
@@ -14699,7 +14705,7 @@ pick two</text>
 <wire x1="33.02" y1="-5.08" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="N$35" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_12"/>
 <wire x1="25.4" y1="-35.56" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
@@ -14708,7 +14714,7 @@ pick two</text>
 <wire x1="30.48" y1="-2.54" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="N$37" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO1_13"/>
 <wire x1="-10.16" y1="-35.56" x2="-10.16" y2="17.78" width="0.1524" layer="91"/>
@@ -14717,7 +14723,7 @@ pick two</text>
 <wire x1="7.62" y1="17.78" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="N$40" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_22"/>
 <wire x1="10.16" y1="-35.56" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
@@ -14726,7 +14732,7 @@ pick two</text>
 <wire x1="17.78" y1="7.62" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="N$41" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_24"/>
 <wire x1="10.16" y1="-91.44" x2="10.16" y2="-92.71" width="0.1524" layer="91"/>
@@ -14737,7 +14743,7 @@ pick two</text>
 <wire x1="20.32" y1="5.08" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$42" class="0">
+<net name="N$42" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO2_23"/>
 <wire x1="12.7" y1="-35.56" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
@@ -14746,7 +14752,7 @@ pick two</text>
 <wire x1="22.86" y1="2.54" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="N$44" class="1">
 <segment>
 <wire x1="7.62" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
@@ -14799,7 +14805,7 @@ pick two</text>
 <junction x="38.1" y="55.88"/>
 </segment>
 </net>
-<net name="N$45" class="0">
+<net name="N$45" class="1">
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="R21" gate="G$1" pin="2"/>
@@ -14850,7 +14856,7 @@ pick two</text>
 <wire x1="43.18" y1="68.58" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="N$11" class="1">
 <segment>
 <wire x1="13.97" y1="0" x2="25.4" y2="0" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
@@ -14861,7 +14867,7 @@ pick two</text>
 <wire x1="13.97" y1="-92.71" x2="13.97" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="N$27" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="GPIO1_12"/>
 <wire x1="-10.16" y1="-91.44" x2="-10.16" y2="-92.71" width="0.1524" layer="91"/>
@@ -14872,7 +14878,7 @@ pick two</text>
 <wire x1="-8.89" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="N$36" class="1">
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="10.16" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
@@ -14883,7 +14889,7 @@ pick two</text>
 <wire x1="15.24" y1="10.16" x2="1.27" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="N$38" class="1">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="12.7" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
