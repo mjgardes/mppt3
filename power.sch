@@ -15379,23 +15379,23 @@ pick two</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$6"/>
-<wire x1="-48.26" y1="83.82" x2="-55.88" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="83.82" x2="-48.26" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="81.28" x2="-48.26" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="60.96" x2="-124.46" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="TX"/>
 <wire x1="-124.46" y1="60.96" x2="-124.46" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$7"/>
+<wire x1="-55.88" y1="81.28" x2="-48.26" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$7"/>
-<wire x1="-55.88" y1="81.28" x2="-50.8" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="81.28" x2="-50.8" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="83.82" x2="-50.8" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="63.5" x2="-127" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="TY"/>
 <wire x1="-127" y1="63.5" x2="-127" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-127" y1="45.72" x2="-124.46" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$6"/>
+<wire x1="-50.8" y1="83.82" x2="-55.88" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
