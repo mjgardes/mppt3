@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2555,12 +2555,13 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="-6.35" y="-6.35"/>
 <vertex x="-6.35" y="8.255"/>
 <vertex x="16.51" y="8.255"/>
-<vertex x="16.51" y="21.59"/>
-<vertex x="12.7" y="21.59"/>
-<vertex x="8.255" y="26.035"/>
-<vertex x="8.255" y="28.575"/>
-<vertex x="24.765" y="28.575"/>
-<vertex x="24.765" y="29.845"/>
+<vertex x="16.51" y="19.05"/>
+<vertex x="13.97" y="21.59"/>
+<vertex x="15.24" y="22.86"/>
+<vertex x="21.59" y="22.86"/>
+<vertex x="24.13" y="25.4"/>
+<vertex x="24.13" y="28.575"/>
+<vertex x="25.4" y="29.845"/>
 <vertex x="57.785" y="29.845"/>
 <vertex x="60.325" y="27.305"/>
 <vertex x="69.215" y="27.305"/>
@@ -3065,9 +3066,12 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="-5.715" y="9.525"/>
 <vertex x="15.24" y="9.525"/>
 <vertex x="15.24" y="17.145"/>
-<vertex x="6.985" y="25.4"/>
-<vertex x="6.985" y="29.845"/>
-<vertex x="23.495" y="29.845"/>
+<vertex x="15.24" y="18.415"/>
+<vertex x="12.065" y="21.59"/>
+<vertex x="14.605" y="24.13"/>
+<vertex x="20.955" y="24.13"/>
+<vertex x="22.86" y="26.035"/>
+<vertex x="22.86" y="29.845"/>
 <vertex x="24.13" y="31.115"/>
 <vertex x="58.42" y="31.115"/>
 <vertex x="60.96" y="28.575"/>
