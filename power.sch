@@ -14492,7 +14492,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="D1" library="diode" deviceset="BY500" device=""/>
 <part name="D2" library="diode" deviceset="BY500" device=""/>
 <part name="D3" library="diode" deviceset="BY500" device=""/>
-<part name="C1" library="rcl" deviceset="CPOL-US" device="E5-10.5"/>
+<part name="C1" library="rcl" deviceset="CPOL-US" device="E5-10.5" value="100u"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="0R2"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="0R2"/>
 <part name="U$3" library="chokes" deviceset="PLH10AN2211R5P2B" device=""/>
@@ -14564,6 +14564,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="C3" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
 <part name="C4" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
 <part name="C5" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
+<part name="C6" library="rcl" deviceset="CPOL-US" device="E5-10.5" value="100u"/>
 </parts>
 <sheets>
 <sheet>
@@ -14597,8 +14598,8 @@ pick two</text>
 <instance part="U$5" gate="G$1" x="66.04" y="86.36" rot="MR270"/>
 <instance part="U$6" gate="G$1" x="38.1" y="-63.5" rot="MR270"/>
 <instance part="GND1" gate="1" x="106.68" y="88.9"/>
-<instance part="PV+" gate="G$1" x="-99.06" y="101.6" rot="R180"/>
-<instance part="PV-" gate="G$1" x="-99.06" y="66.04" rot="R180"/>
+<instance part="PV+" gate="G$1" x="-119.38" y="101.6" rot="R180"/>
+<instance part="PV-" gate="G$1" x="-119.38" y="66.04" rot="R180"/>
 <instance part="BAT+" gate="G$1" x="154.94" y="106.68"/>
 <instance part="BAT-" gate="G$1" x="154.94" y="93.98"/>
 <instance part="H1" gate="G$1" x="154.94" y="68.58"/>
@@ -14661,6 +14662,7 @@ pick two</text>
 <instance part="C3" gate="G$1" x="-73.66" y="83.82"/>
 <instance part="C4" gate="G$1" x="-121.92" y="40.64"/>
 <instance part="C5" gate="G$1" x="-63.5" y="-71.12"/>
+<instance part="C6" gate="G$1" x="-106.68" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -14964,7 +14966,8 @@ pick two</text>
 <pinref part="PV+" gate="G$1" pin="MOUNT"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="101.6" x2="-88.9" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="101.6" x2="-96.52" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="101.6" x2="-106.68" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="101.6" x2="-116.84" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="101.6" x2="-88.9" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-88.9" y="101.6"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
@@ -14985,6 +14988,9 @@ pick two</text>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="86.36" x2="-73.66" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-86.36" y="86.36"/>
+<pinref part="C6" gate="G$1" pin="+"/>
+<wire x1="-106.68" y1="86.36" x2="-106.68" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-106.68" y="101.6"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -15260,7 +15266,8 @@ pick two</text>
 <pinref part="U$1" gate="G$1" pin="P$5"/>
 <wire x1="-55.88" y1="78.74" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="PV-" gate="G$1" pin="MOUNT"/>
-<wire x1="-96.52" y1="66.04" x2="-93.98" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="66.04" x2="-106.68" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="66.04" x2="-93.98" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="66.04" x2="-91.44" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="66.04" x2="-71.12" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="66.04" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
@@ -15319,6 +15326,9 @@ pick two</text>
 <wire x1="-91.44" y1="43.18" x2="-93.98" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="43.18" x2="-93.98" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-93.98" y="66.04"/>
+<pinref part="C6" gate="G$1" pin="-"/>
+<wire x1="-106.68" y1="78.74" x2="-106.68" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-106.68" y="66.04"/>
 </segment>
 </net>
 <net name="N$8" class="0">

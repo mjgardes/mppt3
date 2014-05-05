@@ -2406,7 +2406,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <element name="D1" library="diode" package="DO201-15" value="BY500" x="76.2" y="47.625" rot="R180"/>
 <element name="D2" library="diode" package="DO201-15" value="BY500" x="76.2" y="34.925" rot="R180"/>
 <element name="D3" library="diode" package="DO201-15" value="BY500" x="76.2" y="41.275" rot="R180"/>
-<element name="C1" library="rcl" package="E5-10,5" value="" x="76.2" y="25.4" rot="R180"/>
+<element name="C1" library="rcl" package="E5-10,5" value="100u" x="76.2" y="25.4" rot="R180"/>
 <element name="R1" library="rcl" package="R0603" value="0R2" x="80.01" y="17.78" rot="MR0"/>
 <element name="R2" library="rcl" package="R0603" value="0R2" x="11.43" y="57.15" rot="MR0"/>
 <element name="U$3" library="chokes" package="L10-13" value="PLH10AN2211R5P2B" x="15.875" y="41.91" rot="R90"/>
@@ -2475,6 +2475,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <element name="C3" library="rcl" package="C0603K" value="0.1u" x="11.43" y="54.61" rot="MR0"/>
 <element name="C4" library="rcl" package="C0603K" value="0.1u" x="57.785" y="30.48" rot="MR180"/>
 <element name="C5" library="rcl" package="C0603K" value="0.1u" x="38.735" y="20.955" rot="MR270"/>
+<element name="C6" library="rcl" package="E5-10,5" value="100u" x="2.54" y="60.325" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2773,6 +2774,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="14.605" y1="67.945" x2="14.605" y2="58.42" width="0.8128" layer="16"/>
 <wire x1="14.605" y1="58.42" x2="13.335" y2="57.15" width="0.8128" layer="16"/>
 <wire x1="13.335" y1="57.15" x2="12.28" y2="57.15" width="0.8128" layer="16"/>
+<contactref element="C6" pad="+"/>
+<wire x1="5.08" y1="60.325" x2="12.7" y2="67.945" width="0.8128" layer="16"/>
+<wire x1="12.7" y1="67.945" x2="12.7" y2="69.85" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="U$1" pad="4"/>
@@ -3082,6 +3086,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <via x="27.305" y="36.83" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="12.065" y1="51.07" x2="12.065" y2="50.8" width="0.254" layer="16"/>
 <wire x1="15.875" y1="34.925" x2="16.855" y2="34.925" width="0.6096" layer="16"/>
+<contactref element="C6" pad="-"/>
 </signal>
 <signal name="N$8">
 <contactref element="U1" pad="3"/>
