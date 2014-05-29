@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="5" display="yes" altdistance="0.02" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
@@ -2468,12 +2468,12 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <element name="OK4" library="semiconductors" package="8-SMD" value="6N137SMD" x="31.115" y="30.48" rot="MR0"/>
 <element name="R5" library="rcl" package="R0603" value="560" x="42.545" y="22.225" rot="MR180"/>
 <element name="R6" library="rcl" package="R0603" value="560" x="33.02" y="23.495" rot="MR0"/>
-<element name="R31" library="rcl" package="R0603" value="560" x="52.705" y="29.845" rot="MR270"/>
-<element name="R32" library="rcl" package="R0603" value="560" x="41.275" y="29.845" rot="MR270"/>
+<element name="R31" library="rcl" package="R0603" value="560" x="49.53" y="35.56" rot="MR0"/>
+<element name="R32" library="rcl" package="R0603" value="560" x="38.735" y="34.925" rot="MR0"/>
 <element name="IC3" library="linear" package="SOT89" value="78L05F" x="6.35" y="21.59" rot="MR0"/>
 <element name="C2" library="rcl" package="C0603K" value="0.1u" x="10.16" y="20.955" rot="MR90"/>
 <element name="C3" library="rcl" package="C0603K" value="0.1u" x="11.43" y="54.61" rot="MR0"/>
-<element name="C4" library="rcl" package="C0603K" value="0.1u" x="57.785" y="30.48" rot="MR180"/>
+<element name="C4" library="rcl" package="C0603K" value="0.1u" x="25.4" y="38.1" rot="MR180"/>
 <element name="C5" library="rcl" package="C0603K" value="0.1u" x="38.735" y="20.955" rot="MR270"/>
 <element name="C6" library="rcl" package="E5-10,5" value="100u" x="2.54" y="60.325" rot="R180"/>
 </elements>
@@ -3071,8 +3071,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="14.605" y1="46.99" x2="10.795" y2="46.99" width="0.254" layer="16"/>
 <wire x1="10.795" y1="46.99" x2="9.906" y2="47.879" width="0.254" layer="16"/>
 <wire x1="9.906" y1="47.879" x2="9.906" y2="48.26" width="0.254" layer="16"/>
-<wire x1="58.66" y1="30.48" x2="59.055" y2="30.48" width="0.254" layer="16"/>
-<wire x1="59.055" y1="30.48" x2="60.96" y2="32.385" width="0.254" layer="16"/>
 <wire x1="60.96" y1="32.385" x2="61.5315" y2="32.385" width="0.254" layer="16"/>
 <wire x1="61.5315" y1="32.385" x2="61.595" y2="32.4485" width="0.254" layer="16"/>
 <wire x1="32.9438" y1="40.005" x2="34.8488" y2="38.1" width="0.3048" layer="16"/>
@@ -3087,6 +3085,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="12.065" y1="51.07" x2="12.065" y2="50.8" width="0.254" layer="16"/>
 <wire x1="15.875" y1="34.925" x2="16.855" y2="34.925" width="0.6096" layer="16"/>
 <contactref element="C6" pad="-"/>
+<wire x1="26.275" y1="38.1" x2="26.9875" y2="38.1" width="0.3048" layer="16"/>
+<wire x1="26.9875" y1="38.1" x2="27.305" y2="37.7825" width="0.3048" layer="16"/>
+<wire x1="27.305" y1="37.7825" x2="27.305" y2="36.83" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$8">
 <contactref element="U1" pad="3"/>
@@ -3141,12 +3142,14 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <signal name="N$48">
 <contactref element="OK3" pad="P$2"/>
 <contactref element="R32" pad="1"/>
-<wire x1="41.275" y1="33.0835" x2="41.275" y2="30.695" width="0.254" layer="16"/>
+<wire x1="39.585" y1="34.925" x2="39.585" y2="34.7735" width="0.3048" layer="16"/>
+<wire x1="39.585" y1="34.7735" x2="41.275" y2="33.0835" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$49">
 <contactref element="OK1" pad="P$2"/>
 <contactref element="R31" pad="1"/>
-<wire x1="52.705" y1="30.695" x2="52.705" y2="33.0835" width="0.254" layer="16"/>
+<wire x1="50.38" y1="35.56" x2="50.38" y2="35.4085" width="0.3048" layer="16"/>
+<wire x1="50.38" y1="35.4085" x2="52.705" y2="33.0835" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$50">
 <contactref element="U1" pad="1"/>
@@ -3250,9 +3253,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <contactref element="R31" pad="2"/>
 <contactref element="U1" pad="8"/>
 <contactref element="C4" pad="1"/>
-<wire x1="52.705" y1="28.995" x2="55.425" y2="28.995" width="0.254" layer="16"/>
-<wire x1="55.425" y1="28.995" x2="56.91" y2="30.48" width="0.254" layer="16"/>
-<wire x1="52.705" y1="28.995" x2="41.275" y2="28.995" width="0.3048" layer="16"/>
 <contactref element="OK2" pad="P$8"/>
 <contactref element="OK4" pad="P$8"/>
 <contactref element="OK4" pad="P$7"/>
@@ -3265,8 +3265,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="32.385" y1="34.9885" x2="34.925" y2="34.9885" width="0.254" layer="16"/>
 <wire x1="66.675" y1="32.4485" x2="66.675" y2="30.48" width="0.3048" layer="16"/>
 <via x="66.675" y="30.48" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="66.675" y1="30.48" x2="32.385" y2="30.48" width="0.3048" layer="1"/>
-<wire x1="32.385" y1="30.48" x2="24.765" y2="30.48" width="0.3048" layer="1"/>
+<wire x1="66.675" y1="30.48" x2="46.99" y2="30.48" width="0.3048" layer="1"/>
+<wire x1="46.99" y1="30.48" x2="32.385" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="32.385" y1="33.02" x2="24.765" y2="30.48" width="0.3048" layer="1"/>
 <wire x1="24.765" y1="30.48" x2="23.495" y2="29.21" width="0.3048" layer="1"/>
 <wire x1="23.495" y1="29.21" x2="23.495" y2="26.035" width="0.3048" layer="1"/>
 <wire x1="23.495" y1="26.035" x2="20.955" y2="23.495" width="0.3048" layer="1"/>
@@ -3275,16 +3276,20 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <via x="11.43" y="19.685" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="11.43" y1="19.685" x2="11.035" y2="20.08" width="0.3048" layer="16"/>
 <wire x1="11.035" y1="20.08" x2="10.16" y2="20.08" width="0.3048" layer="16"/>
-<wire x1="32.385" y1="34.9885" x2="32.385" y2="30.48" width="0.3048" layer="16"/>
-<via x="32.385" y="30.48" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="34.925" y1="34.9885" x2="34.925" y2="33.655" width="0.3048" layer="16"/>
-<wire x1="34.925" y1="33.655" x2="39.585" y2="28.995" width="0.3048" layer="16"/>
-<wire x1="39.585" y1="28.995" x2="41.275" y2="28.995" width="0.3048" layer="16"/>
+<wire x1="32.385" y1="34.9885" x2="32.385" y2="33.02" width="0.3048" layer="16"/>
+<via x="32.385" y="33.02" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="28.0162" y1="43.815" x2="26.035" y2="43.815" width="0.3048" layer="16"/>
 <wire x1="26.035" y1="43.815" x2="24.765" y2="42.545" width="0.3048" layer="16"/>
-<wire x1="24.765" y1="42.545" x2="24.765" y2="31.115" width="0.3048" layer="16"/>
-<wire x1="24.765" y1="31.115" x2="25.4" y2="30.48" width="0.3048" layer="16"/>
-<wire x1="25.4" y1="30.48" x2="32.385" y2="30.48" width="0.3048" layer="16"/>
+<wire x1="24.765" y1="42.545" x2="24.765" y2="38.1" width="0.3048" layer="16"/>
+<wire x1="24.765" y1="38.1" x2="24.765" y2="33.655" width="0.3048" layer="16"/>
+<wire x1="24.765" y1="33.655" x2="25.4" y2="33.02" width="0.3048" layer="16"/>
+<wire x1="25.4" y1="33.02" x2="32.385" y2="33.02" width="0.3048" layer="16"/>
+<wire x1="24.525" y1="38.1" x2="24.765" y2="38.1" width="0.3048" layer="16"/>
+<wire x1="34.925" y1="34.9885" x2="37.8215" y2="34.9885" width="0.3048" layer="16"/>
+<wire x1="37.8215" y1="34.9885" x2="37.885" y2="34.925" width="0.3048" layer="16"/>
+<wire x1="48.68" y1="35.56" x2="46.99" y2="35.56" width="0.3048" layer="16"/>
+<via x="46.99" y="35.56" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="46.99" y1="35.56" x2="46.99" y2="30.48" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$46">
 <contactref element="U$9" pad="8"/>

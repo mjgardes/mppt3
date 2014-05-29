@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14585,6 +14585,7 @@ pick two</text>
 <wire x1="66.04" y1="58.42" x2="66.04" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="66.04" y1="119.38" x2="-144.78" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="-144.78" y1="119.38" x2="-144.78" y2="-12.7" width="0.1524" layer="97" style="shortdash"/>
+<text x="-48.26" y="109.22" size="1.778" layer="91">FIXME</text>
 </plain>
 <instances>
 <instance part="D1" gate="1" x="88.9" y="106.68"/>
