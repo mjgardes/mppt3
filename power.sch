@@ -14565,6 +14565,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="C4" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
 <part name="C5" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
 <part name="C6" library="rcl" deviceset="CPOL-US" device="E5-10.5" value="100u"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="47k"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="47k"/>
 </parts>
 <sheets>
 <sheet>
@@ -14586,6 +14588,10 @@ pick two</text>
 <wire x1="66.04" y1="119.38" x2="-149.86" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="-149.86" y1="119.38" x2="-149.86" y2="-12.7" width="0.1524" layer="97" style="shortdash"/>
 <text x="-48.26" y="109.22" size="1.778" layer="91">FIXME</text>
+<text x="101.6" y="2.54" size="1.778" layer="91">These are optional.
+The i2c ports in the
+am3359 have software
+configurable pull-ups.</text>
 </plain>
 <instances>
 <instance part="D1" gate="1" x="88.9" y="106.68"/>
@@ -14664,6 +14670,8 @@ pick two</text>
 <instance part="C4" gate="G$1" x="-121.92" y="40.64"/>
 <instance part="C5" gate="G$1" x="-63.5" y="-71.12"/>
 <instance part="C6" gate="G$1" x="-106.68" y="83.82"/>
+<instance part="R7" gate="G$1" x="-99.06" y="50.8" rot="R90"/>
+<instance part="R8" gate="G$1" x="-101.6" y="45.72" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15365,6 +15373,8 @@ pick two</text>
 <pinref part="OK2" gate="A" pin="VO"/>
 <wire x1="-99.06" y1="43.18" x2="-99.06" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="45.72" x2="-86.36" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<junction x="-99.06" y="45.72"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -15404,10 +15414,13 @@ pick two</text>
 <net name="N$53" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="RY"/>
-<wire x1="-104.14" y1="40.64" x2="-93.98" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="40.64" x2="-101.6" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="40.64" x2="-93.98" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="40.64" x2="-93.98" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="OK4" gate="A" pin="VO"/>
 <wire x1="-93.98" y1="30.48" x2="-86.36" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<junction x="-101.6" y="40.64"/>
 </segment>
 </net>
 <net name="N$54" class="0">
@@ -15487,8 +15500,10 @@ pick two</text>
 <wire x1="-96.52" y1="5.08" x2="-96.52" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-96.52" y="20.32"/>
 <wire x1="-96.52" y1="20.32" x2="-96.52" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="55.88" x2="-104.14" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="55.88" x2="-99.06" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-96.52" y="55.88"/>
+<wire x1="-99.06" y1="55.88" x2="-101.6" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="55.88" x2="-104.14" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="55.88" x2="-88.9" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="55.88" x2="-40.64" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="116.84" x2="-2.54" y2="86.36" width="0.1524" layer="91"/>
@@ -15516,6 +15531,11 @@ pick two</text>
 <wire x1="-7.62" y1="114.3" x2="-7.62" y2="116.84" width="0.1524" layer="91"/>
 <junction x="-7.62" y="116.84"/>
 <junction x="-88.9" y="55.88"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<junction x="-99.06" y="55.88"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="-101.6" y1="50.8" x2="-101.6" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-101.6" y="55.88"/>
 </segment>
 </net>
 <net name="N$46" class="0">
