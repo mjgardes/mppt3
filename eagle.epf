@@ -110,6 +110,12 @@ Layer=91
 Views=" 1: -111.599 1.8704 -29.677 65.9248"
 Sheet=1
 
+[Win_3]
+Type="Control Panel"
+Loc="0 0 1275 769"
+State=1
+Number=0
+
 [Desktop]
 Screen="1440 900"
 Window="Win_1"
