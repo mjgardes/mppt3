@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -531,6 +531,16 @@ Source: http://www.rohm.com/products/databook/motor/pdf/bd623x_series-e.pdf</des
 <rectangle x1="-2.1549" y1="2.2" x2="-1.6551" y2="3.1" layer="51"/>
 <smd name="9" x="0" y="0" dx="3.175" dy="2.54" layer="1"/>
 </package>
+<package name="EGAN-DIE-7">
+<wire x1="-0.8555" y1="-0.4595" x2="0.8555" y2="-0.4595" width="0.05" layer="21"/>
+<wire x1="0.8555" y1="-0.4595" x2="0.8555" y2="0.4595" width="0.05" layer="21"/>
+<wire x1="0.8555" y1="0.4595" x2="-0.8555" y2="0.4595" width="0.05" layer="21"/>
+<wire x1="-0.8555" y1="0.4595" x2="-0.8555" y2="-0.4595" width="0.05" layer="21"/>
+<smd name="DRAIN" x="0" y="0" dx="0.663" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="SOURCE" x="0.6" y="0" dx="0.663" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="GATE" x="-0.6" y="0.2045" dx="0.254" dy="0.254" layer="1" roundness="100"/>
+<smd name="SUBSTRATE" x="-0.6" y="-0.2045" dx="0.254" dy="0.254" layer="1" roundness="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NMOSFET">
@@ -915,6 +925,45 @@ Source: http://www.rohm.com/products/databook/motor/pdf/bd623x_series-e.pdf</des
 <symbol name="NC">
 <pin name="NC" x="-2.54" y="0" length="short" direction="nc"/>
 </symbol>
+<symbol name="NMOSFET-4">
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="G" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="3.302" y="-0.254"/>
+<vertex x="4.318" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="0"/>
+<vertex x="2.032" y="0.762"/>
+<vertex x="2.032" y="-0.762"/>
+</polygon>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="SUBSTRATE" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NMOSFET-D2PAK-7" prefix="Q">
@@ -1203,6 +1252,24 @@ Source: HCPL7721.pdf</description>
 <connect gate="A" pin="GND@2" pad="3 4 6 7 9"/>
 <connect gate="A" pin="VIN" pad="8"/>
 <connect gate="A" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EPC2012">
+<gates>
+<gate name="G$1" symbol="NMOSFET-4" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="EGAN-DIE-7">
+<connects>
+<connect gate="G$1" pin="D" pad="DRAIN"/>
+<connect gate="G$1" pin="G" pad="GATE"/>
+<connect gate="G$1" pin="S" pad="SOURCE"/>
+<connect gate="G$1" pin="SUBSTRATE" pad="SUBSTRATE"/>
 </connects>
 <technologies>
 <technology name=""/>
